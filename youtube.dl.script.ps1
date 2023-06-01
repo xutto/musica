@@ -1,7 +1,7 @@
 Write-Host "===== download mp3 by link ===== ";
 $linkToYoutube = Read-Host -Prompt "plase paste youtube link to download";
 Write-Host "======  Download -> " $linkToYoutube;
-.\youtube-dl.exe --format best -x --audio-format mp3 --audio-quality 320 --prefer-ffmpe -o "D:\Download\music\%(title)s.%(ext)s" $linkToYoutube
+.\yt-dlp.exe --format best -x --audio-format mp3 --audio-quality 320 --prefer-ffmpe -o "D:\Download\music\%(title)s.%(ext)s" $linkToYoutube
 
 
 # Descargar más de un vídeo de un listado
